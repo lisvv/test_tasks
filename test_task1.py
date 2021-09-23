@@ -15,7 +15,7 @@ class TestTask1Methods(unittest.TestCase):
             'Проверьте что Student является классом'
         )
 
-    def test_foo_exists_is_class(self):
+    def test_class_has_foo_method(self):
         class_obj = test_module.Student
         self.assertTrue(
             hasattr(class_obj, 'foo'),
@@ -26,7 +26,7 @@ class TestTask1Methods(unittest.TestCase):
              ' его обьявлении используется декоратор @property')
         )
 
-    def test_student_isinstance_of_student(self):
+    def test_variable_is_instance_of_student(self):
         self.assertTrue(
             hasattr(test_module, 'student'),
             'Проверьте что создали переменную student')
@@ -35,7 +35,7 @@ class TestTask1Methods(unittest.TestCase):
             ('Проверьте, переменная student'
              ' является экземпляром класса Student'))
 
-    def test_student_returns_foo(self):
+    def test_student_foo_returns_bar(self):
         student = test_module.student
         self.assertEqual(
             student.foo, 'bar',
